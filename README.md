@@ -17,4 +17,6 @@ Install Miniconda3 according to https://docs.anaconda.com/free/miniconda/#quick-
 ```
 ### AviaNZ
 
+Download the current release from 
+
 ### BirdNet
