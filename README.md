@@ -1,5 +1,5 @@
 # Bird-Field-Recording
-Collection of instructions and tools to handle and analyze bird field recordings using a simple pipeline:
+Collection of instructions and tools to handle and analyze bird field recordings. As BirdNet might not perform well on a local soecies pool and the sound characteristics of a specific recorder, one first needs to obtain some additional training data:
 
 .wav files → (predict) BirdNet → (review/correct) AviaNZ → extract segments → (retrain) BirdNet
 
