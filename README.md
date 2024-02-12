@@ -1,9 +1,16 @@
 # Bird-Field-Recording
 Collection of instructions and tools to handle and analyze bird field recordings using a simple pipeline:
 
-.wav files → (predict) BirdNet → (review/correct) AviaNZ → (retrain) BirdNet
+.wav files → (predict) BirdNet → (review/correct) AviaNZ → extract segments → (retrain) BirdNet
 
 Once the BirdNet weights have been retrained on the data, this model can be used to predict a larger set of field recordings automatically.
+
+This workflow requires:
+- Installatuon of BirdNet
+- Installation of AviaNZ
+- Annotation data conversion from BirdNet to AviaNZ annotations (and backwards)
+- Some way to extract segments based on the annotation (using BirdNet/segments.py?)
+
 
 ## Installation of tools
 
