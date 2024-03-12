@@ -30,3 +30,31 @@ Install Miniconda3 according to https://docs.anaconda.com/free/miniconda/#quick-
 Download the current release from 
 
 ### BirdNet
+ This is for Linux. You should have a miniconda installation.
+
+First create the environment yml file for minicnda:
+ ```
+name: birdnet
+channels:
+- conda-forge
+- defaults
+dependencies:
+- python==3.11
+- pip
+- pip:
+    - tensorflow>=2.5
+    - librosa
+    - resampy
+```
+and save this as birdnet.yml.
+
+Then run:
+```
+conda env create -f birdnet.yml
+```
+To create the birdnet miniconda enviroment with all dependencies.
+Finally, install `ffmpeg` by:
+```
+sudo apt-get install ffmpeg
+```
+
